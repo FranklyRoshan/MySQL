@@ -1,0 +1,13 @@
+-- Exercise 5 - BETWEEN
+-- Return Customers born
+-- 		Between 1/1/1990 and 1/1/2000
+
+
+-- Solution 
+SELECT *
+FROM customers
+WHERE birth_date BETWEEN '1990-01-01' AND '2000-01-01'
+
+-- Date Format - YYYY-MM-DD [Year-Month-Day] 
+
+ 

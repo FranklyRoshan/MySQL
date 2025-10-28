@@ -1,0 +1,54 @@
+SQL
+
+	Structured Query Language (SQL) is a domain-specific language used to manage and manipulate relational databases. 
+	It allows users to perform tasks such as querying data, inserting new records, updating existing data, deleting 
+	entries, and defining database structures. SQL is declarative, meaning users specify what data they want rather 
+	than how to retrieve it. It is standardized by ANSI and ISO, though various vendors (like Oracle, Microsoft, 
+	and MySQL) implement their own dialects (e.g., PL/SQL, T-SQL). SQL is fundamental in data analysis, application 
+	development, and database administration.
+
+MySQL
+
+	The co-founders of MySQL AB are Michael "Monty" Widenius, David Axmark, and Allan Larsson.
+
+	Michael Widenius is the main author of the MySQL database.
+	The company was founded in 1995 to develop and promote the MySQL database.
+	Widenius named MySQL after his daughter, My.
+	
+	
+Syntax
+	SELECT * FROM table;
+
+Comments
+	SELECT * FROM Album; -- this is a comment
+	
+	/*
+	This is a c-style 
+	multi-line
+	comment.
+	*/
+	
+	SELECT * FROM Album; # not standard SQL comment
+
+SQL clauses
+	SELECT * FROM Album WHERE Label = 'Columbia';
+	
+SQL Functions
+	SELECT COUNT(*) FROM Album WHERE Label = 'Columbia';
+	
+SQL Expressions
+	SELECT Name, Population / 1000000 AS popMM
+	FROM Country
+	WHERE Population >= 1000000
+	ORDER BY Population DESC;
+	
+	
+SQL 
+	The default shortcut key to run SQL code in MySQL Workbench depends on your selection:
+
+	To execute the entire script or selected portion, use Ctrl+Enter (or Command+Return on macOS).
+	To execute the current statement (the statement where your cursor is placed), use Ctrl+Shift+Enter 
+	(or Command+Shift+Return on macOS).
+	These shortcuts are defined in the official MySQL Workbench documentation under the "Query Menu" section.
+
+
